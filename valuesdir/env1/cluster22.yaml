@@ -5,3 +5,4 @@ resources:
     memory: "256Mi"
   requests:
     memory: "256Mi"
+testvar: 2
