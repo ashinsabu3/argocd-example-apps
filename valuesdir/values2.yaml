@@ -1,6 +1,7 @@
 image:
   tag: 0.2
 replicaCount: 1
+testvar: "4"
 testSecret: null
 containerPort: 80
 resources:
