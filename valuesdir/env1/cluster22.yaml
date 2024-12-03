@@ -1,6 +1,5 @@
 image:
   tag: "2"
-testvar: 2
 resources:
   limits:
     memory: "256Mi"
