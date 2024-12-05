@@ -1,5 +1,6 @@
 image:
-  tag: "2"
+  tag: "as"
+testvar: "4"
 resources:
   limits:
     memory: "256Mi"
