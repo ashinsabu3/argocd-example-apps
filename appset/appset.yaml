@@ -25,6 +25,12 @@ spec:
         syncOptions:
          - Validate=true     
          - CreateNamespace=true
+         - PruneLast=false
+         - ApplyOutOfSyncOnly=false
+         - FluxSubsystem=false
+         - AutoCreateFluxResources=false
+         - Replace=false
+         - retry=false
       destination:
         server: '{{.server}}'
         namespace: 'ashin-test3'
