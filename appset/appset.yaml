@@ -16,7 +16,7 @@ spec:
         harness.io/serviceRef: svc1
         harness.io/envRef: env1
     spec:
-      project: default
+      project: 09c668ce
       source:
         repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
         targetRevision: HEAD
