@@ -1,5 +1,5 @@
 image:
-  tag: 0.2
+  tag: "0.2"
 replicaCount: 1
 testSecret: null
 containerPort: 80
