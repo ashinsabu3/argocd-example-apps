@@ -13,3 +13,4 @@ resources:
 arrayvar:
 - name: "x"
 - name: "z"
+testvar: "4"
