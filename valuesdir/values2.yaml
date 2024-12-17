@@ -10,3 +10,6 @@ resources:
   limits:
     memory: "128Mi"
     cpu: 0.1
+arrayvar:
+- name: y
+- name: z
