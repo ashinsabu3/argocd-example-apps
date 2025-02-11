@@ -6,7 +6,7 @@ metadata:
 spec:
   project: 08c6293c
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
+    repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
     targetRevision: HEAD
     path: helm-guestbook
     helm:
