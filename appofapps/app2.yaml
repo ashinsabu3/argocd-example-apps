@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook2
-  namespace: ashin-test2
+  namespace: ashin-to-gitops-private
 spec:
   project: default
   source:
