@@ -11,7 +11,18 @@ spec:
     path: helm-guestbook
     helm:
       values: |
-        abcabcdabcdabcd123123123abcdabcdabcd123123123dabcdabcd1233dabcdabcd123basdhbsakdjowhydhquidhuidhiuahdsadasdaadshsdfhcuahiu: abcabcdabcdabcd123123123abcdabcdabcd123123123dabcdabcd1233dabcdabcd123basdhbsakdjowhydhquidhuidhiuahdsadasdaadshsdfhcuahiu
- destination:
+        ingress:
+          enabled: true
+          path: /
+          hosts:
+            - mydomain.example.com
+          annotations:
+            kubernetes.io/ingress.class: nginx
+            kubernetes.io/tls-acme: "true"
+          labels: {}
+          tls:
+            - secretName: mydomain-tls
+              hosts:
+                - mydomain.example.com destination:
     server: https://kubernetes.default.svc
     namespace: ashin-test2
