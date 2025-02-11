@@ -24,5 +24,6 @@ spec:
             - secretName: mydomain-tls
               hosts:
                 - mydomain.example.com destination:
+  destination:              
     server: https://kubernetes.default.svc
     namespace: ashin-test2
