@@ -8,7 +8,10 @@ spec:
   source:
     repoURL: https://github.com/argoproj/argocd-example-apps.git
     targetRevision: HEAD
-    path: guestbook
+    path: helm-guestbook
+    helm:
+      values: |-
+        abcabcdabcdabcd123123123abcdabcdabcd123123123dabcdabcd1233dabcdabcd123basdhbsakdjowhydhquidhuidhiuahdsadasdaadshsdfhcuahiu: abcabcdabcdabcd123123123abcdabcdabcd123123123dabcdabcd1233dabcdabcd123basdhbsakdjowhydhquidhuidhiuahdsadasdaadshsdfhcuahiu
   destination:
     server: https://kubernetes.default.svc
     namespace: guestbook
