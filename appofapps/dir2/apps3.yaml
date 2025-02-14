@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook2141
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -20,7 +20,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook231
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -38,7 +38,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook2321
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -56,7 +56,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook211
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -74,7 +74,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook51
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -92,7 +92,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook61
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -110,7 +110,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook71
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -128,7 +128,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook81
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -146,7 +146,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook911
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -164,7 +164,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook101
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -182,7 +182,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook1111
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -200,7 +200,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook1121
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -218,7 +218,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook1131
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -236,7 +236,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook1141
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
@@ -254,7 +254,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook1151
-  namespace: ashin-to-gitops-private
+  namespace: argocd
 spec:
   project: 08c6293c
   source:
