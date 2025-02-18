@@ -49,7 +49,7 @@ spec:
               path: /
               port: http
           env: 
-            name: "USERNAME"
+          - name: "USERNAME"
             value: test-{{ .Values.path }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
