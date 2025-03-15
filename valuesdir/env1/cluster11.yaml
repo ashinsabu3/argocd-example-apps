@@ -1,7 +1,8 @@
 image:
   tag: "2"
+testvar: "4"
 resources:
-  limits:
-    memory: "256Mi"
   requests:
+    memory: "256Mi"
+  limits:
     memory: "256Mi"
