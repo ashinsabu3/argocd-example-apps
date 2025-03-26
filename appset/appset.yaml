@@ -14,7 +14,7 @@ spec:
       name: '{{.name}}-guestbook'
       labels: 
         harness.io/serviceRef: test
-        harness.io/envRef: env1
+        harness.io/envRef: ""
     spec:
       project: 08c6293c
       source:
