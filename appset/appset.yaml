@@ -13,10 +13,10 @@ spec:
     metadata:
       name: '{{.name}}-guestbook'
       labels: 
-        harness.io/serviceRef: svc1
+        harness.io/serviceRef: test
         harness.io/envRef: env1
     spec:
-      project: 09c668ce
+      project: 08c6293c
       source:
         repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
         targetRevision: HEAD
