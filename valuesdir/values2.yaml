@@ -3,7 +3,7 @@ image:
 replicaCount: 1
 testvar: "4"
 testSecret: null
-lolvar: "oBVw_nPBSOu1kFEk3jStaw"
+lolvar: "ziLf_6XYROu_TiBRMg1ZVQ"
 containerPort: 80
 resources:
   requests:
