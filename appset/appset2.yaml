@@ -11,7 +11,7 @@ spec:
   - clusters: {}
   template:
     metadata:
-      name: '{{.name}}-guestbook'
+      name: '{{.name}}-from-me'
       labels: 
         harness.io/serviceRef: test2
         harness.io/envRef: env12
@@ -20,7 +20,7 @@ spec:
       source:
         repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
         targetRevision: HEAD
-        path: '{{.name}}-from-me'
+        path: 'helm-guestbook'
       syncPolicy:
         automated: {}
         syncOptions:
