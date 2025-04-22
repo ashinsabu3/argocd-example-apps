@@ -1,0 +1,37 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: guestbook-appset-2
+spec:
+  goTemplate: true
+  goTemplateOptions: ["missingkey=error"]
+  syncPolicy:
+    preserveResourcesOnDeletion: true
+  generators:
+  - clusters: {}
+  template:
+    metadata:
+      name: '{{.name}}-guestbook'
+      labels: 
+        harness.io/serviceRef: test2
+        harness.io/envRef: env12
+    spec:
+      project: '{{.name}}-from-me'
+      source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        targetRevision: HEAD
+        path: guestbook
+      syncPolicy:
+        automated: {}
+        syncOptions:
+         - Validate=true     
+         - CreateNamespace=true
+         - PruneLast=false
+         - ApplyOutOfSyncOnly=false
+         - FluxSubsystem=false
+         - AutoCreateFluxResources=false
+         - Replace=false
+         - retry=false
+      destination:
+        server: '{{.server}}'
+        namespace: 'ashin-test3'
