@@ -20,7 +20,10 @@ spec:
       source:
         repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
         targetRevision: HEAD
-        path: guestbook
+        path: helm-guestbook
+        helm:
+          parameters:
+            replicaCount: 0
       syncPolicy:
         automated: {}
         syncOptions:
