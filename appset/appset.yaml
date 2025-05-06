@@ -23,7 +23,7 @@ spec:
         path: helm-guestbook
         helm:
           parameters:
-            replicaCount: 0
+          - replicaCount: 0
       syncPolicy:
         automated: {}
         syncOptions:
