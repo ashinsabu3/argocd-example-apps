@@ -35,7 +35,7 @@ spec:
         - ""
         - --appendonly
         - "no"
-        - --logleve
+        - --loglevel
         - "debug"
         ports:
         - name: redis
