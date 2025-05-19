@@ -1,5 +1,5 @@
 image:
-  tag: "latest"
+  tag: "2"
   repository: "ashinsabu/loggerimagerandom"
   pullPolicy: "Always"
 ingress:
