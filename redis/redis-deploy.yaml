@@ -35,6 +35,8 @@ spec:
         - ""
         - --appendonly
         - "no"
+        - --logleve
+        - "debug"
         ports:
         - name: redis
           containerPort: 6379
