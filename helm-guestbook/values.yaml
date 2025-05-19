@@ -1,6 +1,6 @@
 image:
-  tag: "v2"
-  repository: "ibmcom/guestbook"
+  tag: "0.1"
+  repository: "quay.io/argoprojlabs/argocd-e2e-container"
   pullPolicy: "IfNotPresent"
 ingress:
   path: "/"
