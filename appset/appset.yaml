@@ -15,9 +15,6 @@ spec:
       values:
         svc: inclustersvc
   - clusters:
-      selector:
-        matchLabels:
-          argocd.argoproj.io/secret-type: cluster
       values:
         svc: othersvc
   template:
