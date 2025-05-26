@@ -21,7 +21,7 @@ spec:
     metadata:
       name: '{{.name}}-guestbook'
       labels: 
-        harness.io/serviceRef: {{.values.svc}}
+        harness.io/serviceRef: '{{.values.svc}}'
         harness.io/envRef: env1
     spec:
       project: 'default'
