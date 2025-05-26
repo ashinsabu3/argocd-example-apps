@@ -8,12 +8,20 @@ spec:
   syncPolicy:
     preserveResourcesOnDeletion: true
   generators:
-  - clusters: {}
+  - clusters: 
+      values:
+        svc: test2
+  - clusters:
+      selector:
+        matchLabels:
+          argocd.argoproj.io/secret-type: cluster
+      values:
+        svc: test
   template:
     metadata:
       name: '{{.name}}-guestbook'
       labels: 
-        harness.io/serviceRef: test
+        harness.io/serviceRef: {{.values.svc}}
         harness.io/envRef: env1
     spec:
       project: 'default'
