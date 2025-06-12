@@ -8,7 +8,7 @@ ingress:
   - "chart-example.local"
   annotations: {}
   tls: []
-  enabled: false
+  enabled: true
 replicaCount: 1
 tolerations: []
 service:
