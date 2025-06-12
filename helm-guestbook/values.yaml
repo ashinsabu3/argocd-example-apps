@@ -17,7 +17,7 @@ service:
 containerPort: 80
 resources:
   limits:
-    cpu: "0.2"
+    cpu: "0.3"
     memory: "128Mi"
   requests:
     cpu: "0.2"
