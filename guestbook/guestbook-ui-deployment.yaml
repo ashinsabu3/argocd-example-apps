@@ -8,11 +8,11 @@ spec:
   selector:
     matchLabels:
       app: guestbook-ui
-      name: {{ .Values.x }}
   template:
     metadata:
       labels:
         app: guestbook-ui
+        name: {{ .Values.x }}
     spec:
       topologySpreadConstraints:
         - maxSkew: 1
