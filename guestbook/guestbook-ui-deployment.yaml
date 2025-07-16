@@ -12,7 +12,6 @@ spec:
     metadata:
       labels:
         app: guestbook-ui
-        name: <+secrets.getValue("account.ashinsabu")>
     spec:
       topologySpreadConstraints:
         - maxSkew: 1
