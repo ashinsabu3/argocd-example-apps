@@ -12,6 +12,7 @@ spec:
     metadata:
       labels:
         app: guestbook-ui
+        name: {{ .Values.x }}
     spec:
       topologySpreadConstraints:
         - maxSkew: 1
