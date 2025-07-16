@@ -12,6 +12,19 @@ spec:
     metadata:
       labels:
         app: guestbook-ui
+    spec:
+      topologySpreadConstraints:
+        - maxSkew: 1
+          minDomains: 1
+          topologyKey: "kubernetes.io/hostname"
+          whenUnsatisfiable: "DoNotSchedule"
+          labelSelector:
+            matchLabels:
+              app: guestbook-ui
+          matchLabelKeys:
+            - pod-template-hash
+          nodeAffinityPolicy: Honor
+          nodeTaintsPolicy: Ignore
       containers:
       - image: "ashinsabu/loggerimagerandom"
         name: guestbook-ui
@@ -24,5 +37,3 @@ spec:
           requests:
            cpu: 100m
            memory: 100Mi
-      
-# gcr.io/heptio-images/ks-guestbook-demo:0.1
