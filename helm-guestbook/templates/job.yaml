@@ -12,6 +12,6 @@ spec:
     spec:
       restartPolicy: Never
       containers:
-        - name: echo
+        - name: echo2
           image: busybox
           command: ["sh", "-c", "echo 'Hello from first job!' && sleep 30"]
