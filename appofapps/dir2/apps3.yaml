@@ -4,7 +4,7 @@ metadata:
   name: guestbook2141
   namespace: argocd
 spec:
-  project: 08c6293c
+  project: aprojectlol
   source:
     repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
     targetRevision: HEAD
@@ -22,7 +22,7 @@ metadata:
   name: guestbook231
   namespace: argocd
 spec:
-  project: 08c6293c
+  project: aprojectlol
   source:
     repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
     targetRevision: HEAD
