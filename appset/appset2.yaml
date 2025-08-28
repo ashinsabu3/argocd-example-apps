@@ -32,7 +32,7 @@ spec:
     spec:
       project: aprojectlol
       source:
-        repoURL: https://github.com/example-org/example-apps.git
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps
         targetRevision: HEAD
         path: helm-guestbook
       destination:
