@@ -1,37 +1,44 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: guestbook-appset-2
+  name: example-applicationset
 spec:
-  goTemplate: true
-  goTemplateOptions: ["missingkey=error"]
-  syncPolicy:
-    preserveResourcesOnDeletion: true
   generators:
-  - clusters: {}
+    - list:
+        elements:
+          - name: app1
+            namespace: app1-ns
+          - name: app2
+            namespace: app2-ns
+          - name: app3
+            namespace: app3-ns
+          - name: app4
+            namespace: app4-ns
+          - name: app5
+            namespace: app5-ns
+          - name: app6
+            namespace: app6-ns
+          - name: app7
+            namespace: app7-ns
+          - name: app8
+            namespace: app8-ns
+          - name: app9
+            namespace: app9-ns
+          - name: app10
+            namespace: app10-ns
   template:
     metadata:
-      name: '{{.name}}-from-me'
-      labels: 
-        harness.io/serviceRef: test2
-        harness.io/envRef: env12
+      name: '{{name}}'
     spec:
-      project: 'default'
+      project: aprojectlol
       source:
-        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        repoURL: https://github.com/example-org/example-apps.git
         targetRevision: HEAD
-        path: 'helm-guestbook'
-      syncPolicy:
-        automated: {}
-        syncOptions:
-         - Validate=true     
-         - CreateNamespace=true
-         - PruneLast=false
-         - ApplyOutOfSyncOnly=false
-         - FluxSubsystem=false
-         - AutoCreateFluxResources=false
-         - Replace=false
-         - retry=false
+        path: helm-guestbook
       destination:
-        server: '{{.server}}'
-        namespace: 'ashin-test3'
+        server: https://kubernetes.default.svc
+        namespace: '{{namespace}}'
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
