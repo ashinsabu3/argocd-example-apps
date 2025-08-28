@@ -35,6 +35,9 @@ spec:
         repoURL: https://github.com/ashinsabu3/argocd-example-apps
         targetRevision: HEAD
         path: helm-guestbook
+        helm:
+          values: |
+            replicaCount: 0
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{namespace}}'
