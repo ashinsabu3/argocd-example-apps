@@ -3,12 +3,12 @@ kind: Job
 metadata:
   name: immutable-job-test
   labels:
-    app: immutable-job
+    app: immutable-job-test
 spec:
   template:
     metadata:
       labels:
-        app: immutable-job
+        app: immutable-job-test
     spec:
       restartPolicy: Never
       containers:
