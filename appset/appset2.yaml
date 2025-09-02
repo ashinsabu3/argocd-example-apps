@@ -2,39 +2,43 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: example-applicationset
+  namespace: argocd
 spec:
   generators:
     - list:
         elements:
           - name: app1
-            namespace: app1-ns
+            namespace: argocd
           - name: app2
-            namespace: app2-ns
+            namespace: argocd
           - name: app3
-            namespace: app3-ns
+            namespace: argocd
           - name: app4
-            namespace: app4-ns
+            namespace: argocd
           - name: app5
-            namespace: app5-ns
+            namespace: argocd
           - name: app6
-            namespace: app6-ns
+            namespace: argocd
           - name: app7
-            namespace: app7-ns
+            namespace: argocd
           - name: app8
-            namespace: app8-ns
+            namespace: argocd
           - name: app9
-            namespace: app9-ns
+            namespace: argocd
           - name: app10
-            namespace: app10-ns
+            namespace: argocd
   template:
     metadata:
       name: '{{name}}'
     spec:
       project: aprojectlol
       source:
-        repoURL: https://github.com/example-org/example-apps.git
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps
         targetRevision: HEAD
         path: helm-guestbook
+        helm:
+          values: |
+            replicaCount: 0
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{namespace}}'
