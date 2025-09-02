@@ -8,25 +8,25 @@ spec:
     - list:
         elements:
           - name: app1
-            namespace: app1-ns
+            namespace: argocd
           - name: app2
-            namespace: app2-ns
+            namespace: argocd
           - name: app3
-            namespace: app3-ns
+            namespace: argocd
           - name: app4
-            namespace: app4-ns
+            namespace: argocd
           - name: app5
-            namespace: app5-ns
+            namespace: argocd
           - name: app6
-            namespace: app6-ns
+            namespace: argocd
           - name: app7
-            namespace: app7-ns
+            namespace: argocd
           - name: app8
-            namespace: app8-ns
+            namespace: argocd
           - name: app9
-            namespace: app9-ns
+            namespace: argocd
           - name: app10
-            namespace: app10-ns
+            namespace: argocd
   template:
     metadata:
       name: '{{name}}'
