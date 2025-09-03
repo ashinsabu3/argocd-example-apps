@@ -25,4 +25,4 @@ resources:
 nodeSelector: {}
 affinity: {}
 cm:
-  enable: true
+  enable: false
