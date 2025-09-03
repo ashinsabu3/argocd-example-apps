@@ -24,3 +24,5 @@ resources:
     memory: "128Mi"
 nodeSelector: {}
 affinity: {}
+cm:
+  enable: true
