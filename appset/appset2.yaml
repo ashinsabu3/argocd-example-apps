@@ -39,7 +39,7 @@ spec:
         helm:
           values: |
             replicaCount: 0
-            image.tag: 3123
+            image.tag: 3
             cm.enable: false
       destination:
         server: https://kubernetes.default.svc
