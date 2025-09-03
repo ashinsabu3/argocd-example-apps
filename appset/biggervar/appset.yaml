@@ -1,0 +1,2030 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: example-applicationset
+  namespace: argocd
+spec:
+  generators:
+    - list:
+        elements:
+          - name: app1
+            namespace: argocd
+          - name: app2
+            namespace: argocd
+          - name: app3
+            namespace: argocd
+          - name: app4
+            namespace: argocd
+          - name: app5
+            namespace: argocd
+          - name: app6
+            namespace: argocd
+          - name: app7
+            namespace: argocd
+          - name: app8
+            namespace: argocd
+          - name: app9
+            namespace: argocd
+          - name: app10
+            namespace: argocd
+          - name: app11
+            namespace: argocd
+          - name: app12
+            namespace: argocd
+          - name: app13
+            namespace: argocd
+          - name: app14
+            namespace: argocd
+          - name: app15
+            namespace: argocd
+          - name: app16
+            namespace: argocd
+          - name: app17
+            namespace: argocd
+          - name: app18
+            namespace: argocd
+          - name: app19
+            namespace: argocd
+          - name: app20
+            namespace: argocd
+          - name: app21
+            namespace: argocd
+          - name: app22
+            namespace: argocd
+          - name: app23
+            namespace: argocd
+          - name: app24
+            namespace: argocd
+          - name: app25
+            namespace: argocd
+          - name: app26
+            namespace: argocd
+          - name: app27
+            namespace: argocd
+          - name: app28
+            namespace: argocd
+          - name: app29
+            namespace: argocd
+          - name: app30
+            namespace: argocd
+          - name: app31
+            namespace: argocd
+          - name: app32
+            namespace: argocd
+          - name: app33
+            namespace: argocd
+          - name: app34
+            namespace: argocd
+          - name: app35
+            namespace: argocd
+          - name: app36
+            namespace: argocd
+          - name: app37
+            namespace: argocd
+          - name: app38
+            namespace: argocd
+          - name: app39
+            namespace: argocd
+          - name: app40
+            namespace: argocd
+          - name: app41
+            namespace: argocd
+          - name: app42
+            namespace: argocd
+          - name: app43
+            namespace: argocd
+          - name: app44
+            namespace: argocd
+          - name: app45
+            namespace: argocd
+          - name: app46
+            namespace: argocd
+          - name: app47
+            namespace: argocd
+          - name: app48
+            namespace: argocd
+          - name: app49
+            namespace: argocd
+          - name: app50
+            namespace: argocd
+          - name: app51
+            namespace: argocd
+          - name: app52
+            namespace: argocd
+          - name: app53
+            namespace: argocd
+          - name: app54
+            namespace: argocd
+          - name: app55
+            namespace: argocd
+          - name: app56
+            namespace: argocd
+          - name: app57
+            namespace: argocd
+          - name: app58
+            namespace: argocd
+          - name: app59
+            namespace: argocd
+          - name: app60
+            namespace: argocd
+          - name: app61
+            namespace: argocd
+          - name: app62
+            namespace: argocd
+          - name: app63
+            namespace: argocd
+          - name: app64
+            namespace: argocd
+          - name: app65
+            namespace: argocd
+          - name: app66
+            namespace: argocd
+          - name: app67
+            namespace: argocd
+          - name: app68
+            namespace: argocd
+          - name: app69
+            namespace: argocd
+          - name: app70
+            namespace: argocd
+          - name: app71
+            namespace: argocd
+          - name: app72
+            namespace: argocd
+          - name: app73
+            namespace: argocd
+          - name: app74
+            namespace: argocd
+          - name: app75
+            namespace: argocd
+          - name: app76
+            namespace: argocd
+          - name: app77
+            namespace: argocd
+          - name: app78
+            namespace: argocd
+          - name: app79
+            namespace: argocd
+          - name: app80
+            namespace: argocd
+          - name: app81
+            namespace: argocd
+          - name: app82
+            namespace: argocd
+          - name: app83
+            namespace: argocd
+          - name: app84
+            namespace: argocd
+          - name: app85
+            namespace: argocd
+          - name: app86
+            namespace: argocd
+          - name: app87
+            namespace: argocd
+          - name: app88
+            namespace: argocd
+          - name: app89
+            namespace: argocd
+          - name: app90
+            namespace: argocd
+          - name: app91
+            namespace: argocd
+          - name: app92
+            namespace: argocd
+          - name: app93
+            namespace: argocd
+          - name: app94
+            namespace: argocd
+          - name: app95
+            namespace: argocd
+          - name: app96
+            namespace: argocd
+          - name: app97
+            namespace: argocd
+          - name: app98
+            namespace: argocd
+          - name: app99
+            namespace: argocd
+          - name: app100
+            namespace: argocd
+          - name: app101
+            namespace: argocd
+          - name: app102
+            namespace: argocd
+          - name: app103
+            namespace: argocd
+          - name: app104
+            namespace: argocd
+          - name: app105
+            namespace: argocd
+          - name: app106
+            namespace: argocd
+          - name: app107
+            namespace: argocd
+          - name: app108
+            namespace: argocd
+          - name: app109
+            namespace: argocd
+          - name: app110
+            namespace: argocd
+          - name: app111
+            namespace: argocd
+          - name: app112
+            namespace: argocd
+          - name: app113
+            namespace: argocd
+          - name: app114
+            namespace: argocd
+          - name: app115
+            namespace: argocd
+          - name: app116
+            namespace: argocd
+          - name: app117
+            namespace: argocd
+          - name: app118
+            namespace: argocd
+          - name: app119
+            namespace: argocd
+          - name: app120
+            namespace: argocd
+          - name: app121
+            namespace: argocd
+          - name: app122
+            namespace: argocd
+          - name: app123
+            namespace: argocd
+          - name: app124
+            namespace: argocd
+          - name: app125
+            namespace: argocd
+          - name: app126
+            namespace: argocd
+          - name: app127
+            namespace: argocd
+          - name: app128
+            namespace: argocd
+          - name: app129
+            namespace: argocd
+          - name: app130
+            namespace: argocd
+          - name: app131
+            namespace: argocd
+          - name: app132
+            namespace: argocd
+          - name: app133
+            namespace: argocd
+          - name: app134
+            namespace: argocd
+          - name: app135
+            namespace: argocd
+          - name: app136
+            namespace: argocd
+          - name: app137
+            namespace: argocd
+          - name: app138
+            namespace: argocd
+          - name: app139
+            namespace: argocd
+          - name: app140
+            namespace: argocd
+          - name: app141
+            namespace: argocd
+          - name: app142
+            namespace: argocd
+          - name: app143
+            namespace: argocd
+          - name: app144
+            namespace: argocd
+          - name: app145
+            namespace: argocd
+          - name: app146
+            namespace: argocd
+          - name: app147
+            namespace: argocd
+          - name: app148
+            namespace: argocd
+          - name: app149
+            namespace: argocd
+          - name: app150
+            namespace: argocd
+          - name: app151
+            namespace: argocd
+          - name: app152
+            namespace: argocd
+          - name: app153
+            namespace: argocd
+          - name: app154
+            namespace: argocd
+          - name: app155
+            namespace: argocd
+          - name: app156
+            namespace: argocd
+          - name: app157
+            namespace: argocd
+          - name: app158
+            namespace: argocd
+          - name: app159
+            namespace: argocd
+          - name: app160
+            namespace: argocd
+          - name: app161
+            namespace: argocd
+          - name: app162
+            namespace: argocd
+          - name: app163
+            namespace: argocd
+          - name: app164
+            namespace: argocd
+          - name: app165
+            namespace: argocd
+          - name: app166
+            namespace: argocd
+          - name: app167
+            namespace: argocd
+          - name: app168
+            namespace: argocd
+          - name: app169
+            namespace: argocd
+          - name: app170
+            namespace: argocd
+          - name: app171
+            namespace: argocd
+          - name: app172
+            namespace: argocd
+          - name: app173
+            namespace: argocd
+          - name: app174
+            namespace: argocd
+          - name: app175
+            namespace: argocd
+          - name: app176
+            namespace: argocd
+          - name: app177
+            namespace: argocd
+          - name: app178
+            namespace: argocd
+          - name: app179
+            namespace: argocd
+          - name: app180
+            namespace: argocd
+          - name: app181
+            namespace: argocd
+          - name: app182
+            namespace: argocd
+          - name: app183
+            namespace: argocd
+          - name: app184
+            namespace: argocd
+          - name: app185
+            namespace: argocd
+          - name: app186
+            namespace: argocd
+          - name: app187
+            namespace: argocd
+          - name: app188
+            namespace: argocd
+          - name: app189
+            namespace: argocd
+          - name: app190
+            namespace: argocd
+          - name: app191
+            namespace: argocd
+          - name: app192
+            namespace: argocd
+          - name: app193
+            namespace: argocd
+          - name: app194
+            namespace: argocd
+          - name: app195
+            namespace: argocd
+          - name: app196
+            namespace: argocd
+          - name: app197
+            namespace: argocd
+          - name: app198
+            namespace: argocd
+          - name: app199
+            namespace: argocd
+          - name: app200
+            namespace: argocd
+          - name: app201
+            namespace: argocd
+          - name: app202
+            namespace: argocd
+          - name: app203
+            namespace: argocd
+          - name: app204
+            namespace: argocd
+          - name: app205
+            namespace: argocd
+          - name: app206
+            namespace: argocd
+          - name: app207
+            namespace: argocd
+          - name: app208
+            namespace: argocd
+          - name: app209
+            namespace: argocd
+          - name: app210
+            namespace: argocd
+          - name: app211
+            namespace: argocd
+          - name: app212
+            namespace: argocd
+          - name: app213
+            namespace: argocd
+          - name: app214
+            namespace: argocd
+          - name: app215
+            namespace: argocd
+          - name: app216
+            namespace: argocd
+          - name: app217
+            namespace: argocd
+          - name: app218
+            namespace: argocd
+          - name: app219
+            namespace: argocd
+          - name: app220
+            namespace: argocd
+          - name: app221
+            namespace: argocd
+          - name: app222
+            namespace: argocd
+          - name: app223
+            namespace: argocd
+          - name: app224
+            namespace: argocd
+          - name: app225
+            namespace: argocd
+          - name: app226
+            namespace: argocd
+          - name: app227
+            namespace: argocd
+          - name: app228
+            namespace: argocd
+          - name: app229
+            namespace: argocd
+          - name: app230
+            namespace: argocd
+          - name: app231
+            namespace: argocd
+          - name: app232
+            namespace: argocd
+          - name: app233
+            namespace: argocd
+          - name: app234
+            namespace: argocd
+          - name: app235
+            namespace: argocd
+          - name: app236
+            namespace: argocd
+          - name: app237
+            namespace: argocd
+          - name: app238
+            namespace: argocd
+          - name: app239
+            namespace: argocd
+          - name: app240
+            namespace: argocd
+          - name: app241
+            namespace: argocd
+          - name: app242
+            namespace: argocd
+          - name: app243
+            namespace: argocd
+          - name: app244
+            namespace: argocd
+          - name: app245
+            namespace: argocd
+          - name: app246
+            namespace: argocd
+          - name: app247
+            namespace: argocd
+          - name: app248
+            namespace: argocd
+          - name: app249
+            namespace: argocd
+          - name: app250
+            namespace: argocd
+          - name: app251
+            namespace: argocd
+          - name: app252
+            namespace: argocd
+          - name: app253
+            namespace: argocd
+          - name: app254
+            namespace: argocd
+          - name: app255
+            namespace: argocd
+          - name: app256
+            namespace: argocd
+          - name: app257
+            namespace: argocd
+          - name: app258
+            namespace: argocd
+          - name: app259
+            namespace: argocd
+          - name: app260
+            namespace: argocd
+          - name: app261
+            namespace: argocd
+          - name: app262
+            namespace: argocd
+          - name: app263
+            namespace: argocd
+          - name: app264
+            namespace: argocd
+          - name: app265
+            namespace: argocd
+          - name: app266
+            namespace: argocd
+          - name: app267
+            namespace: argocd
+          - name: app268
+            namespace: argocd
+          - name: app269
+            namespace: argocd
+          - name: app270
+            namespace: argocd
+          - name: app271
+            namespace: argocd
+          - name: app272
+            namespace: argocd
+          - name: app273
+            namespace: argocd
+          - name: app274
+            namespace: argocd
+          - name: app275
+            namespace: argocd
+          - name: app276
+            namespace: argocd
+          - name: app277
+            namespace: argocd
+          - name: app278
+            namespace: argocd
+          - name: app279
+            namespace: argocd
+          - name: app280
+            namespace: argocd
+          - name: app281
+            namespace: argocd
+          - name: app282
+            namespace: argocd
+          - name: app283
+            namespace: argocd
+          - name: app284
+            namespace: argocd
+          - name: app285
+            namespace: argocd
+          - name: app286
+            namespace: argocd
+          - name: app287
+            namespace: argocd
+          - name: app288
+            namespace: argocd
+          - name: app289
+            namespace: argocd
+          - name: app290
+            namespace: argocd
+          - name: app291
+            namespace: argocd
+          - name: app292
+            namespace: argocd
+          - name: app293
+            namespace: argocd
+          - name: app294
+            namespace: argocd
+          - name: app295
+            namespace: argocd
+          - name: app296
+            namespace: argocd
+          - name: app297
+            namespace: argocd
+          - name: app298
+            namespace: argocd
+          - name: app299
+            namespace: argocd
+          - name: app300
+            namespace: argocd
+          - name: app301
+            namespace: argocd
+          - name: app302
+            namespace: argocd
+          - name: app303
+            namespace: argocd
+          - name: app304
+            namespace: argocd
+          - name: app305
+            namespace: argocd
+          - name: app306
+            namespace: argocd
+          - name: app307
+            namespace: argocd
+          - name: app308
+            namespace: argocd
+          - name: app309
+            namespace: argocd
+          - name: app310
+            namespace: argocd
+          - name: app311
+            namespace: argocd
+          - name: app312
+            namespace: argocd
+          - name: app313
+            namespace: argocd
+          - name: app314
+            namespace: argocd
+          - name: app315
+            namespace: argocd
+          - name: app316
+            namespace: argocd
+          - name: app317
+            namespace: argocd
+          - name: app318
+            namespace: argocd
+          - name: app319
+            namespace: argocd
+          - name: app320
+            namespace: argocd
+          - name: app321
+            namespace: argocd
+          - name: app322
+            namespace: argocd
+          - name: app323
+            namespace: argocd
+          - name: app324
+            namespace: argocd
+          - name: app325
+            namespace: argocd
+          - name: app326
+            namespace: argocd
+          - name: app327
+            namespace: argocd
+          - name: app328
+            namespace: argocd
+          - name: app329
+            namespace: argocd
+          - name: app330
+            namespace: argocd
+          - name: app331
+            namespace: argocd
+          - name: app332
+            namespace: argocd
+          - name: app333
+            namespace: argocd
+          - name: app334
+            namespace: argocd
+          - name: app335
+            namespace: argocd
+          - name: app336
+            namespace: argocd
+          - name: app337
+            namespace: argocd
+          - name: app338
+            namespace: argocd
+          - name: app339
+            namespace: argocd
+          - name: app340
+            namespace: argocd
+          - name: app341
+            namespace: argocd
+          - name: app342
+            namespace: argocd
+          - name: app343
+            namespace: argocd
+          - name: app344
+            namespace: argocd
+          - name: app345
+            namespace: argocd
+          - name: app346
+            namespace: argocd
+          - name: app347
+            namespace: argocd
+          - name: app348
+            namespace: argocd
+          - name: app349
+            namespace: argocd
+          - name: app350
+            namespace: argocd
+          - name: app351
+            namespace: argocd
+          - name: app352
+            namespace: argocd
+          - name: app353
+            namespace: argocd
+          - name: app354
+            namespace: argocd
+          - name: app355
+            namespace: argocd
+          - name: app356
+            namespace: argocd
+          - name: app357
+            namespace: argocd
+          - name: app358
+            namespace: argocd
+          - name: app359
+            namespace: argocd
+          - name: app360
+            namespace: argocd
+          - name: app361
+            namespace: argocd
+          - name: app362
+            namespace: argocd
+          - name: app363
+            namespace: argocd
+          - name: app364
+            namespace: argocd
+          - name: app365
+            namespace: argocd
+          - name: app366
+            namespace: argocd
+          - name: app367
+            namespace: argocd
+          - name: app368
+            namespace: argocd
+          - name: app369
+            namespace: argocd
+          - name: app370
+            namespace: argocd
+          - name: app371
+            namespace: argocd
+          - name: app372
+            namespace: argocd
+          - name: app373
+            namespace: argocd
+          - name: app374
+            namespace: argocd
+          - name: app375
+            namespace: argocd
+          - name: app376
+            namespace: argocd
+          - name: app377
+            namespace: argocd
+          - name: app378
+            namespace: argocd
+          - name: app379
+            namespace: argocd
+          - name: app380
+            namespace: argocd
+          - name: app381
+            namespace: argocd
+          - name: app382
+            namespace: argocd
+          - name: app383
+            namespace: argocd
+          - name: app384
+            namespace: argocd
+          - name: app385
+            namespace: argocd
+          - name: app386
+            namespace: argocd
+          - name: app387
+            namespace: argocd
+          - name: app388
+            namespace: argocd
+          - name: app389
+            namespace: argocd
+          - name: app390
+            namespace: argocd
+          - name: app391
+            namespace: argocd
+          - name: app392
+            namespace: argocd
+          - name: app393
+            namespace: argocd
+          - name: app394
+            namespace: argocd
+          - name: app395
+            namespace: argocd
+          - name: app396
+            namespace: argocd
+          - name: app397
+            namespace: argocd
+          - name: app398
+            namespace: argocd
+          - name: app399
+            namespace: argocd
+          - name: app400
+            namespace: argocd
+          - name: app401
+            namespace: argocd
+          - name: app402
+            namespace: argocd
+          - name: app403
+            namespace: argocd
+          - name: app404
+            namespace: argocd
+          - name: app405
+            namespace: argocd
+          - name: app406
+            namespace: argocd
+          - name: app407
+            namespace: argocd
+          - name: app408
+            namespace: argocd
+          - name: app409
+            namespace: argocd
+          - name: app410
+            namespace: argocd
+          - name: app411
+            namespace: argocd
+          - name: app412
+            namespace: argocd
+          - name: app413
+            namespace: argocd
+          - name: app414
+            namespace: argocd
+          - name: app415
+            namespace: argocd
+          - name: app416
+            namespace: argocd
+          - name: app417
+            namespace: argocd
+          - name: app418
+            namespace: argocd
+          - name: app419
+            namespace: argocd
+          - name: app420
+            namespace: argocd
+          - name: app421
+            namespace: argocd
+          - name: app422
+            namespace: argocd
+          - name: app423
+            namespace: argocd
+          - name: app424
+            namespace: argocd
+          - name: app425
+            namespace: argocd
+          - name: app426
+            namespace: argocd
+          - name: app427
+            namespace: argocd
+          - name: app428
+            namespace: argocd
+          - name: app429
+            namespace: argocd
+          - name: app430
+            namespace: argocd
+          - name: app431
+            namespace: argocd
+          - name: app432
+            namespace: argocd
+          - name: app433
+            namespace: argocd
+          - name: app434
+            namespace: argocd
+          - name: app435
+            namespace: argocd
+          - name: app436
+            namespace: argocd
+          - name: app437
+            namespace: argocd
+          - name: app438
+            namespace: argocd
+          - name: app439
+            namespace: argocd
+          - name: app440
+            namespace: argocd
+          - name: app441
+            namespace: argocd
+          - name: app442
+            namespace: argocd
+          - name: app443
+            namespace: argocd
+          - name: app444
+            namespace: argocd
+          - name: app445
+            namespace: argocd
+          - name: app446
+            namespace: argocd
+          - name: app447
+            namespace: argocd
+          - name: app448
+            namespace: argocd
+          - name: app449
+            namespace: argocd
+          - name: app450
+            namespace: argocd
+          - name: app451
+            namespace: argocd
+          - name: app452
+            namespace: argocd
+          - name: app453
+            namespace: argocd
+          - name: app454
+            namespace: argocd
+          - name: app455
+            namespace: argocd
+          - name: app456
+            namespace: argocd
+          - name: app457
+            namespace: argocd
+          - name: app458
+            namespace: argocd
+          - name: app459
+            namespace: argocd
+          - name: app460
+            namespace: argocd
+          - name: app461
+            namespace: argocd
+          - name: app462
+            namespace: argocd
+          - name: app463
+            namespace: argocd
+          - name: app464
+            namespace: argocd
+          - name: app465
+            namespace: argocd
+          - name: app466
+            namespace: argocd
+          - name: app467
+            namespace: argocd
+          - name: app468
+            namespace: argocd
+          - name: app469
+            namespace: argocd
+          - name: app470
+            namespace: argocd
+          - name: app471
+            namespace: argocd
+          - name: app472
+            namespace: argocd
+          - name: app473
+            namespace: argocd
+          - name: app474
+            namespace: argocd
+          - name: app475
+            namespace: argocd
+          - name: app476
+            namespace: argocd
+          - name: app477
+            namespace: argocd
+          - name: app478
+            namespace: argocd
+          - name: app479
+            namespace: argocd
+          - name: app480
+            namespace: argocd
+          - name: app481
+            namespace: argocd
+          - name: app482
+            namespace: argocd
+          - name: app483
+            namespace: argocd
+          - name: app484
+            namespace: argocd
+          - name: app485
+            namespace: argocd
+          - name: app486
+            namespace: argocd
+          - name: app487
+            namespace: argocd
+          - name: app488
+            namespace: argocd
+          - name: app489
+            namespace: argocd
+          - name: app490
+            namespace: argocd
+          - name: app491
+            namespace: argocd
+          - name: app492
+            namespace: argocd
+          - name: app493
+            namespace: argocd
+          - name: app494
+            namespace: argocd
+          - name: app495
+            namespace: argocd
+          - name: app496
+            namespace: argocd
+          - name: app497
+            namespace: argocd
+          - name: app498
+            namespace: argocd
+          - name: app499
+            namespace: argocd
+          - name: app500
+            namespace: argocd
+          - name: app501
+            namespace: argocd
+          - name: app502
+            namespace: argocd
+          - name: app503
+            namespace: argocd
+          - name: app504
+            namespace: argocd
+          - name: app505
+            namespace: argocd
+          - name: app506
+            namespace: argocd
+          - name: app507
+            namespace: argocd
+          - name: app508
+            namespace: argocd
+          - name: app509
+            namespace: argocd
+          - name: app510
+            namespace: argocd
+          - name: app511
+            namespace: argocd
+          - name: app512
+            namespace: argocd
+          - name: app513
+            namespace: argocd
+          - name: app514
+            namespace: argocd
+          - name: app515
+            namespace: argocd
+          - name: app516
+            namespace: argocd
+          - name: app517
+            namespace: argocd
+          - name: app518
+            namespace: argocd
+          - name: app519
+            namespace: argocd
+          - name: app520
+            namespace: argocd
+          - name: app521
+            namespace: argocd
+          - name: app522
+            namespace: argocd
+          - name: app523
+            namespace: argocd
+          - name: app524
+            namespace: argocd
+          - name: app525
+            namespace: argocd
+          - name: app526
+            namespace: argocd
+          - name: app527
+            namespace: argocd
+          - name: app528
+            namespace: argocd
+          - name: app529
+            namespace: argocd
+          - name: app530
+            namespace: argocd
+          - name: app531
+            namespace: argocd
+          - name: app532
+            namespace: argocd
+          - name: app533
+            namespace: argocd
+          - name: app534
+            namespace: argocd
+          - name: app535
+            namespace: argocd
+          - name: app536
+            namespace: argocd
+          - name: app537
+            namespace: argocd
+          - name: app538
+            namespace: argocd
+          - name: app539
+            namespace: argocd
+          - name: app540
+            namespace: argocd
+          - name: app541
+            namespace: argocd
+          - name: app542
+            namespace: argocd
+          - name: app543
+            namespace: argocd
+          - name: app544
+            namespace: argocd
+          - name: app545
+            namespace: argocd
+          - name: app546
+            namespace: argocd
+          - name: app547
+            namespace: argocd
+          - name: app548
+            namespace: argocd
+          - name: app549
+            namespace: argocd
+          - name: app550
+            namespace: argocd
+          - name: app551
+            namespace: argocd
+          - name: app552
+            namespace: argocd
+          - name: app553
+            namespace: argocd
+          - name: app554
+            namespace: argocd
+          - name: app555
+            namespace: argocd
+          - name: app556
+            namespace: argocd
+          - name: app557
+            namespace: argocd
+          - name: app558
+            namespace: argocd
+          - name: app559
+            namespace: argocd
+          - name: app560
+            namespace: argocd
+          - name: app561
+            namespace: argocd
+          - name: app562
+            namespace: argocd
+          - name: app563
+            namespace: argocd
+          - name: app564
+            namespace: argocd
+          - name: app565
+            namespace: argocd
+          - name: app566
+            namespace: argocd
+          - name: app567
+            namespace: argocd
+          - name: app568
+            namespace: argocd
+          - name: app569
+            namespace: argocd
+          - name: app570
+            namespace: argocd
+          - name: app571
+            namespace: argocd
+          - name: app572
+            namespace: argocd
+          - name: app573
+            namespace: argocd
+          - name: app574
+            namespace: argocd
+          - name: app575
+            namespace: argocd
+          - name: app576
+            namespace: argocd
+          - name: app577
+            namespace: argocd
+          - name: app578
+            namespace: argocd
+          - name: app579
+            namespace: argocd
+          - name: app580
+            namespace: argocd
+          - name: app581
+            namespace: argocd
+          - name: app582
+            namespace: argocd
+          - name: app583
+            namespace: argocd
+          - name: app584
+            namespace: argocd
+          - name: app585
+            namespace: argocd
+          - name: app586
+            namespace: argocd
+          - name: app587
+            namespace: argocd
+          - name: app588
+            namespace: argocd
+          - name: app589
+            namespace: argocd
+          - name: app590
+            namespace: argocd
+          - name: app591
+            namespace: argocd
+          - name: app592
+            namespace: argocd
+          - name: app593
+            namespace: argocd
+          - name: app594
+            namespace: argocd
+          - name: app595
+            namespace: argocd
+          - name: app596
+            namespace: argocd
+          - name: app597
+            namespace: argocd
+          - name: app598
+            namespace: argocd
+          - name: app599
+            namespace: argocd
+          - name: app600
+            namespace: argocd
+          - name: app601
+            namespace: argocd
+          - name: app602
+            namespace: argocd
+          - name: app603
+            namespace: argocd
+          - name: app604
+            namespace: argocd
+          - name: app605
+            namespace: argocd
+          - name: app606
+            namespace: argocd
+          - name: app607
+            namespace: argocd
+          - name: app608
+            namespace: argocd
+          - name: app609
+            namespace: argocd
+          - name: app610
+            namespace: argocd
+          - name: app611
+            namespace: argocd
+          - name: app612
+            namespace: argocd
+          - name: app613
+            namespace: argocd
+          - name: app614
+            namespace: argocd
+          - name: app615
+            namespace: argocd
+          - name: app616
+            namespace: argocd
+          - name: app617
+            namespace: argocd
+          - name: app618
+            namespace: argocd
+          - name: app619
+            namespace: argocd
+          - name: app620
+            namespace: argocd
+          - name: app621
+            namespace: argocd
+          - name: app622
+            namespace: argocd
+          - name: app623
+            namespace: argocd
+          - name: app624
+            namespace: argocd
+          - name: app625
+            namespace: argocd
+          - name: app626
+            namespace: argocd
+          - name: app627
+            namespace: argocd
+          - name: app628
+            namespace: argocd
+          - name: app629
+            namespace: argocd
+          - name: app630
+            namespace: argocd
+          - name: app631
+            namespace: argocd
+          - name: app632
+            namespace: argocd
+          - name: app633
+            namespace: argocd
+          - name: app634
+            namespace: argocd
+          - name: app635
+            namespace: argocd
+          - name: app636
+            namespace: argocd
+          - name: app637
+            namespace: argocd
+          - name: app638
+            namespace: argocd
+          - name: app639
+            namespace: argocd
+          - name: app640
+            namespace: argocd
+          - name: app641
+            namespace: argocd
+          - name: app642
+            namespace: argocd
+          - name: app643
+            namespace: argocd
+          - name: app644
+            namespace: argocd
+          - name: app645
+            namespace: argocd
+          - name: app646
+            namespace: argocd
+          - name: app647
+            namespace: argocd
+          - name: app648
+            namespace: argocd
+          - name: app649
+            namespace: argocd
+          - name: app650
+            namespace: argocd
+          - name: app651
+            namespace: argocd
+          - name: app652
+            namespace: argocd
+          - name: app653
+            namespace: argocd
+          - name: app654
+            namespace: argocd
+          - name: app655
+            namespace: argocd
+          - name: app656
+            namespace: argocd
+          - name: app657
+            namespace: argocd
+          - name: app658
+            namespace: argocd
+          - name: app659
+            namespace: argocd
+          - name: app660
+            namespace: argocd
+          - name: app661
+            namespace: argocd
+          - name: app662
+            namespace: argocd
+          - name: app663
+            namespace: argocd
+          - name: app664
+            namespace: argocd
+          - name: app665
+            namespace: argocd
+          - name: app666
+            namespace: argocd
+          - name: app667
+            namespace: argocd
+          - name: app668
+            namespace: argocd
+          - name: app669
+            namespace: argocd
+          - name: app670
+            namespace: argocd
+          - name: app671
+            namespace: argocd
+          - name: app672
+            namespace: argocd
+          - name: app673
+            namespace: argocd
+          - name: app674
+            namespace: argocd
+          - name: app675
+            namespace: argocd
+          - name: app676
+            namespace: argocd
+          - name: app677
+            namespace: argocd
+          - name: app678
+            namespace: argocd
+          - name: app679
+            namespace: argocd
+          - name: app680
+            namespace: argocd
+          - name: app681
+            namespace: argocd
+          - name: app682
+            namespace: argocd
+          - name: app683
+            namespace: argocd
+          - name: app684
+            namespace: argocd
+          - name: app685
+            namespace: argocd
+          - name: app686
+            namespace: argocd
+          - name: app687
+            namespace: argocd
+          - name: app688
+            namespace: argocd
+          - name: app689
+            namespace: argocd
+          - name: app690
+            namespace: argocd
+          - name: app691
+            namespace: argocd
+          - name: app692
+            namespace: argocd
+          - name: app693
+            namespace: argocd
+          - name: app694
+            namespace: argocd
+          - name: app695
+            namespace: argocd
+          - name: app696
+            namespace: argocd
+          - name: app697
+            namespace: argocd
+          - name: app698
+            namespace: argocd
+          - name: app699
+            namespace: argocd
+          - name: app700
+            namespace: argocd
+          - name: app701
+            namespace: argocd
+          - name: app702
+            namespace: argocd
+          - name: app703
+            namespace: argocd
+          - name: app704
+            namespace: argocd
+          - name: app705
+            namespace: argocd
+          - name: app706
+            namespace: argocd
+          - name: app707
+            namespace: argocd
+          - name: app708
+            namespace: argocd
+          - name: app709
+            namespace: argocd
+          - name: app710
+            namespace: argocd
+          - name: app711
+            namespace: argocd
+          - name: app712
+            namespace: argocd
+          - name: app713
+            namespace: argocd
+          - name: app714
+            namespace: argocd
+          - name: app715
+            namespace: argocd
+          - name: app716
+            namespace: argocd
+          - name: app717
+            namespace: argocd
+          - name: app718
+            namespace: argocd
+          - name: app719
+            namespace: argocd
+          - name: app720
+            namespace: argocd
+          - name: app721
+            namespace: argocd
+          - name: app722
+            namespace: argocd
+          - name: app723
+            namespace: argocd
+          - name: app724
+            namespace: argocd
+          - name: app725
+            namespace: argocd
+          - name: app726
+            namespace: argocd
+          - name: app727
+            namespace: argocd
+          - name: app728
+            namespace: argocd
+          - name: app729
+            namespace: argocd
+          - name: app730
+            namespace: argocd
+          - name: app731
+            namespace: argocd
+          - name: app732
+            namespace: argocd
+          - name: app733
+            namespace: argocd
+          - name: app734
+            namespace: argocd
+          - name: app735
+            namespace: argocd
+          - name: app736
+            namespace: argocd
+          - name: app737
+            namespace: argocd
+          - name: app738
+            namespace: argocd
+          - name: app739
+            namespace: argocd
+          - name: app740
+            namespace: argocd
+          - name: app741
+            namespace: argocd
+          - name: app742
+            namespace: argocd
+          - name: app743
+            namespace: argocd
+          - name: app744
+            namespace: argocd
+          - name: app745
+            namespace: argocd
+          - name: app746
+            namespace: argocd
+          - name: app747
+            namespace: argocd
+          - name: app748
+            namespace: argocd
+          - name: app749
+            namespace: argocd
+          - name: app750
+            namespace: argocd
+          - name: app751
+            namespace: argocd
+          - name: app752
+            namespace: argocd
+          - name: app753
+            namespace: argocd
+          - name: app754
+            namespace: argocd
+          - name: app755
+            namespace: argocd
+          - name: app756
+            namespace: argocd
+          - name: app757
+            namespace: argocd
+          - name: app758
+            namespace: argocd
+          - name: app759
+            namespace: argocd
+          - name: app760
+            namespace: argocd
+          - name: app761
+            namespace: argocd
+          - name: app762
+            namespace: argocd
+          - name: app763
+            namespace: argocd
+          - name: app764
+            namespace: argocd
+          - name: app765
+            namespace: argocd
+          - name: app766
+            namespace: argocd
+          - name: app767
+            namespace: argocd
+          - name: app768
+            namespace: argocd
+          - name: app769
+            namespace: argocd
+          - name: app770
+            namespace: argocd
+          - name: app771
+            namespace: argocd
+          - name: app772
+            namespace: argocd
+          - name: app773
+            namespace: argocd
+          - name: app774
+            namespace: argocd
+          - name: app775
+            namespace: argocd
+          - name: app776
+            namespace: argocd
+          - name: app777
+            namespace: argocd
+          - name: app778
+            namespace: argocd
+          - name: app779
+            namespace: argocd
+          - name: app780
+            namespace: argocd
+          - name: app781
+            namespace: argocd
+          - name: app782
+            namespace: argocd
+          - name: app783
+            namespace: argocd
+          - name: app784
+            namespace: argocd
+          - name: app785
+            namespace: argocd
+          - name: app786
+            namespace: argocd
+          - name: app787
+            namespace: argocd
+          - name: app788
+            namespace: argocd
+          - name: app789
+            namespace: argocd
+          - name: app790
+            namespace: argocd
+          - name: app791
+            namespace: argocd
+          - name: app792
+            namespace: argocd
+          - name: app793
+            namespace: argocd
+          - name: app794
+            namespace: argocd
+          - name: app795
+            namespace: argocd
+          - name: app796
+            namespace: argocd
+          - name: app797
+            namespace: argocd
+          - name: app798
+            namespace: argocd
+          - name: app799
+            namespace: argocd
+          - name: app800
+            namespace: argocd
+          - name: app801
+            namespace: argocd
+          - name: app802
+            namespace: argocd
+          - name: app803
+            namespace: argocd
+          - name: app804
+            namespace: argocd
+          - name: app805
+            namespace: argocd
+          - name: app806
+            namespace: argocd
+          - name: app807
+            namespace: argocd
+          - name: app808
+            namespace: argocd
+          - name: app809
+            namespace: argocd
+          - name: app810
+            namespace: argocd
+          - name: app811
+            namespace: argocd
+          - name: app812
+            namespace: argocd
+          - name: app813
+            namespace: argocd
+          - name: app814
+            namespace: argocd
+          - name: app815
+            namespace: argocd
+          - name: app816
+            namespace: argocd
+          - name: app817
+            namespace: argocd
+          - name: app818
+            namespace: argocd
+          - name: app819
+            namespace: argocd
+          - name: app820
+            namespace: argocd
+          - name: app821
+            namespace: argocd
+          - name: app822
+            namespace: argocd
+          - name: app823
+            namespace: argocd
+          - name: app824
+            namespace: argocd
+          - name: app825
+            namespace: argocd
+          - name: app826
+            namespace: argocd
+          - name: app827
+            namespace: argocd
+          - name: app828
+            namespace: argocd
+          - name: app829
+            namespace: argocd
+          - name: app830
+            namespace: argocd
+          - name: app831
+            namespace: argocd
+          - name: app832
+            namespace: argocd
+          - name: app833
+            namespace: argocd
+          - name: app834
+            namespace: argocd
+          - name: app835
+            namespace: argocd
+          - name: app836
+            namespace: argocd
+          - name: app837
+            namespace: argocd
+          - name: app838
+            namespace: argocd
+          - name: app839
+            namespace: argocd
+          - name: app840
+            namespace: argocd
+          - name: app841
+            namespace: argocd
+          - name: app842
+            namespace: argocd
+          - name: app843
+            namespace: argocd
+          - name: app844
+            namespace: argocd
+          - name: app845
+            namespace: argocd
+          - name: app846
+            namespace: argocd
+          - name: app847
+            namespace: argocd
+          - name: app848
+            namespace: argocd
+          - name: app849
+            namespace: argocd
+          - name: app850
+            namespace: argocd
+          - name: app851
+            namespace: argocd
+          - name: app852
+            namespace: argocd
+          - name: app853
+            namespace: argocd
+          - name: app854
+            namespace: argocd
+          - name: app855
+            namespace: argocd
+          - name: app856
+            namespace: argocd
+          - name: app857
+            namespace: argocd
+          - name: app858
+            namespace: argocd
+          - name: app859
+            namespace: argocd
+          - name: app860
+            namespace: argocd
+          - name: app861
+            namespace: argocd
+          - name: app862
+            namespace: argocd
+          - name: app863
+            namespace: argocd
+          - name: app864
+            namespace: argocd
+          - name: app865
+            namespace: argocd
+          - name: app866
+            namespace: argocd
+          - name: app867
+            namespace: argocd
+          - name: app868
+            namespace: argocd
+          - name: app869
+            namespace: argocd
+          - name: app870
+            namespace: argocd
+          - name: app871
+            namespace: argocd
+          - name: app872
+            namespace: argocd
+          - name: app873
+            namespace: argocd
+          - name: app874
+            namespace: argocd
+          - name: app875
+            namespace: argocd
+          - name: app876
+            namespace: argocd
+          - name: app877
+            namespace: argocd
+          - name: app878
+            namespace: argocd
+          - name: app879
+            namespace: argocd
+          - name: app880
+            namespace: argocd
+          - name: app881
+            namespace: argocd
+          - name: app882
+            namespace: argocd
+          - name: app883
+            namespace: argocd
+          - name: app884
+            namespace: argocd
+          - name: app885
+            namespace: argocd
+          - name: app886
+            namespace: argocd
+          - name: app887
+            namespace: argocd
+          - name: app888
+            namespace: argocd
+          - name: app889
+            namespace: argocd
+          - name: app890
+            namespace: argocd
+          - name: app891
+            namespace: argocd
+          - name: app892
+            namespace: argocd
+          - name: app893
+            namespace: argocd
+          - name: app894
+            namespace: argocd
+          - name: app895
+            namespace: argocd
+          - name: app896
+            namespace: argocd
+          - name: app897
+            namespace: argocd
+          - name: app898
+            namespace: argocd
+          - name: app899
+            namespace: argocd
+          - name: app900
+            namespace: argocd
+          - name: app901
+            namespace: argocd
+          - name: app902
+            namespace: argocd
+          - name: app903
+            namespace: argocd
+          - name: app904
+            namespace: argocd
+          - name: app905
+            namespace: argocd
+          - name: app906
+            namespace: argocd
+          - name: app907
+            namespace: argocd
+          - name: app908
+            namespace: argocd
+          - name: app909
+            namespace: argocd
+          - name: app910
+            namespace: argocd
+          - name: app911
+            namespace: argocd
+          - name: app912
+            namespace: argocd
+          - name: app913
+            namespace: argocd
+          - name: app914
+            namespace: argocd
+          - name: app915
+            namespace: argocd
+          - name: app916
+            namespace: argocd
+          - name: app917
+            namespace: argocd
+          - name: app918
+            namespace: argocd
+          - name: app919
+            namespace: argocd
+          - name: app920
+            namespace: argocd
+          - name: app921
+            namespace: argocd
+          - name: app922
+            namespace: argocd
+          - name: app923
+            namespace: argocd
+          - name: app924
+            namespace: argocd
+          - name: app925
+            namespace: argocd
+          - name: app926
+            namespace: argocd
+          - name: app927
+            namespace: argocd
+          - name: app928
+            namespace: argocd
+          - name: app929
+            namespace: argocd
+          - name: app930
+            namespace: argocd
+          - name: app931
+            namespace: argocd
+          - name: app932
+            namespace: argocd
+          - name: app933
+            namespace: argocd
+          - name: app934
+            namespace: argocd
+          - name: app935
+            namespace: argocd
+          - name: app936
+            namespace: argocd
+          - name: app937
+            namespace: argocd
+          - name: app938
+            namespace: argocd
+          - name: app939
+            namespace: argocd
+          - name: app940
+            namespace: argocd
+          - name: app941
+            namespace: argocd
+          - name: app942
+            namespace: argocd
+          - name: app943
+            namespace: argocd
+          - name: app944
+            namespace: argocd
+          - name: app945
+            namespace: argocd
+          - name: app946
+            namespace: argocd
+          - name: app947
+            namespace: argocd
+          - name: app948
+            namespace: argocd
+          - name: app949
+            namespace: argocd
+          - name: app950
+            namespace: argocd
+          - name: app951
+            namespace: argocd
+          - name: app952
+            namespace: argocd
+          - name: app953
+            namespace: argocd
+          - name: app954
+            namespace: argocd
+          - name: app955
+            namespace: argocd
+          - name: app956
+            namespace: argocd
+          - name: app957
+            namespace: argocd
+          - name: app958
+            namespace: argocd
+          - name: app959
+            namespace: argocd
+          - name: app960
+            namespace: argocd
+          - name: app961
+            namespace: argocd
+          - name: app962
+            namespace: argocd
+          - name: app963
+            namespace: argocd
+          - name: app964
+            namespace: argocd
+          - name: app965
+            namespace: argocd
+          - name: app966
+            namespace: argocd
+          - name: app967
+            namespace: argocd
+          - name: app968
+            namespace: argocd
+          - name: app969
+            namespace: argocd
+          - name: app970
+            namespace: argocd
+          - name: app971
+            namespace: argocd
+          - name: app972
+            namespace: argocd
+          - name: app973
+            namespace: argocd
+          - name: app974
+            namespace: argocd
+          - name: app975
+            namespace: argocd
+          - name: app976
+            namespace: argocd
+          - name: app977
+            namespace: argocd
+          - name: app978
+            namespace: argocd
+          - name: app979
+            namespace: argocd
+          - name: app980
+            namespace: argocd
+          - name: app981
+            namespace: argocd
+          - name: app982
+            namespace: argocd
+          - name: app983
+            namespace: argocd
+          - name: app984
+            namespace: argocd
+          - name: app985
+            namespace: argocd
+          - name: app986
+            namespace: argocd
+          - name: app987
+            namespace: argocd
+          - name: app988
+            namespace: argocd
+          - name: app989
+            namespace: argocd
+          - name: app990
+            namespace: argocd
+          - name: app991
+            namespace: argocd
+          - name: app992
+            namespace: argocd
+          - name: app993
+            namespace: argocd
+          - name: app994
+            namespace: argocd
+          - name: app995
+            namespace: argocd
+          - name: app996
+            namespace: argocd
+          - name: app997
+            namespace: argocd
+          - name: app998
+            namespace: argocd
+          - name: app999
+            namespace: argocd
+          - name: app1000
+            namespace: argocd
+  template:
+    metadata:
+      name: '{{name}}'
+    spec:
+      project: aprojectlol
+      source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps
+        targetRevision: HEAD
+        path: helm-guestbook
+        helm:
+          values: |
+            replicaCount: 0
+            image.tag: 3
+            cm.enable: true
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: '{{namespace}}'
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
