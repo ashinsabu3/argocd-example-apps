@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: example-applicationset-1ten
-  namespace: prod2-ashin
+  namespace: ashin-to-gitops-private
 spec:
   generators:
     - list:
@@ -43,7 +43,7 @@ spec:
             cm.enable: true
       destination:
         server: https://kubernetes.default.svc
-        namespace: prod2-ashin
+        namespace: ashin-to-gitops-private
       syncPolicy:
         automated:
           prune: true
