@@ -28,7 +28,7 @@ spec:
       serviceAccountName: redis
       containers:
       - name: redis
-        image: redis:6.2.11
+        image: redis:6.2.14
         imagePullPolicy: Always
         args:
         - --save
