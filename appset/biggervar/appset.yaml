@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: example-applicationset
-  namespace: prod2-ashin
+  namespace: argocd
 spec:
   generators:
     - list:
@@ -2023,7 +2023,7 @@ spec:
             cm.enable: true
       destination:
         server: https://kubernetes.default.svc
-        namespace: prod2-ashin
+        namespace: argocd
       syncPolicy:
         automated:
           prune: true
