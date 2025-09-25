@@ -6,6 +6,7 @@ metadata:
     app.kubernetes.io/name: redis
     app.kubernetes.io/component: redis
     app.kubernetes.io/part-of: argocd
+    abc: <+secrets.getValue("account.secretfromvault")>
 spec:
   replicas: 2
   revisionHistoryLimit: 3
