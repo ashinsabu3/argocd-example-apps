@@ -1,7 +1,7 @@
-# apiVersion: v1
-# kind: ConfigMap
-# metadata:
-#   name: redis-db-secret
-# data:
-#   username: <+secrets.getValue("account.secretfromvault")>-<+secrets.getValue("account.secretfromvault")>
-#   username2: <+secrets.getValue("account.testAshin")> #<+secrets.getValue("db-username-2")>
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis-db-secret
+data:
+  username: <+secrets.getValue("account.secretfromvault")>-<+secrets.getValue("account.secretfromvault")>
+  username2: <+secrets.getValue("account.testAshin")> #<+secrets.getValue("db-username-2")>
