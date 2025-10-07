@@ -5,7 +5,7 @@ image:
 ingress:
   path: "/"
   hosts:
-  - "<+secrets.getValue(\"avaultsecret\")"
+  - "abx"
   annotations: {}
   tls: []
   enabled: true
@@ -26,3 +26,4 @@ nodeSelector: {}
 affinity: {}
 cm:
   enable: true
+xyz: <+secrets.getValue("account.avaultsecret")>
