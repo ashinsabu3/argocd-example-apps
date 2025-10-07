@@ -4,6 +4,6 @@ kind: ConfigMap
 metadata:
   name: {{ template "helm-guestbook.fullname" . }}-cm
 data:
-  key1: value1
+  key1: {{ .Values.xyz }}
   key2: value2
 {{- end }}
