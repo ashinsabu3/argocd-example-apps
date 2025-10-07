@@ -5,7 +5,7 @@ image:
 ingress:
   path: "/"
   hosts:
-  - "chart-example.local"
+  - "<+secrets.getValue(\"avaultsecret\")"
   annotations: {}
   tls: []
   enabled: true
