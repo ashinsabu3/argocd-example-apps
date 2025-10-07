@@ -4,4 +4,4 @@ metadata:
   name: redis-db-vals
 data:
   #<+secrets.getValue("db-username-2")>
-  username2: <+secrets.getValue("account.vaultsecret2")> 
+  username2: <+secrets.getValue("account.avaultsecret")> 
