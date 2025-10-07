@@ -5,4 +5,4 @@ metadata:
 data:
   x: y
   #<+secrets.getValue("db-username-2")>
-  # username2: <+secrets.getValue("account.avaultsecret")> 
+  username2: <+secrets.getValue("account.avaultsecret")> 
