@@ -3,5 +3,5 @@ kind: Configmap
 metadata:
   name: redis-db-vals
 data:
-  abc: <+secrets.getValue("account.vaultsecret")>
+  abc: <+secrets.getValue("account.vaultsecret")>-<+secrets.getValue("account.secretinhsm2")>
   username2: <+secrets.getValue("account.secret2HSM")> 
