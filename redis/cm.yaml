@@ -3,5 +3,6 @@ kind: Secret
 metadata:
   name: redis-db-vals
 stringData:
-  abc: <+secrets.getValue("account.vaultsecret")>
+  abc: <+secrets.getValue("account.vaultsecret")>-<+secrets.getValue("account.secretinhsm2")> 
   username2: <+secrets.getValue("account.secretinhsm2")> 
+  username2: <+secrets.getValue("account.secretinhsm2")> #<+secrets.getValue("account.vaultsecret")>
