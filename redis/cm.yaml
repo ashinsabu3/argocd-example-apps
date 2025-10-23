@@ -1,7 +1,7 @@
-# apiVersion: v1
-# kind: Secret
-# metadata:
-#   name: redis-db-vals
-# stringData:
-#   secretfordb: <+secrets.getValue("account.vaultsecret")>
-#   username1: <+secrets.getValue("account.secret2HSM")> 
+apiVersion: v1
+kind: Secret
+metadata:
+  name: redis-db-vals
+stringData:
+  secretfordb: <+secrets.getValue("account.vaultsecret")>
+  username1: <+secrets.getValue("account.secret2HSM")> 
