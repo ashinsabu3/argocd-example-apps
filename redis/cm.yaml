@@ -5,4 +5,3 @@ metadata:
 stringData:
   secretfordb: <+secrets.getValue("account.vaultsecret")>-<+secrets.getValue("account.secret2HSM")> 
   username1: <+secrets.getValue("account.secret2HSM")> 
-  username1: <+secrets.getValue("account.secretinhs")> #<+secrets.getValue("account.vaultsecret")>
