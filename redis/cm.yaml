@@ -4,4 +4,4 @@ metadata:
   name: redis-db-vals
 stringData:
   secretfordb: <+secrets.getValue("account.preexistingvaultsecret")>
-  username1: <+secrets.getValue("account.secret2HSM")> 
+  username1: <+secrets.getValue("account.GitlabSecretMb4C5")> 
