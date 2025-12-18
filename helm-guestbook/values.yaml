@@ -28,3 +28,4 @@ cm:
   enable: true
 xyz: <+secrets.getValue("account.avaultsecret")> 
 expressionsecret: <+secrets.getValue("account.tesgitops2")>
+hsmsecret: <+secrets.getValue("account.test-secret-acc")>
