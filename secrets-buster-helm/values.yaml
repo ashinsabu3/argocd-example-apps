@@ -17,11 +17,11 @@ service:
 containerPort: 80
 resources:
   limits:
-    cpu: "0.3"
-    memory: "128Mi"
+    cpu: "0.5"
+    memory: "512Mi"
   requests:
-    cpu: "0.2"
-    memory: "128Mi"
+    cpu: "0.5"
+    memory: "512Mi"
 nodeSelector: {}
 affinity: {}
 cm:
