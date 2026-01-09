@@ -28,7 +28,22 @@ spec:
             - name: http
               containerPort: {{ .Values.containerPort }}
               protocol: TCP
-          
+          livenessProbe:
+            httpGet:
+                path: /healthz
+                port: 8080
+              initialDelaySeconds: 5
+              periodSeconds: 10
+              timeoutSeconds: 2
+              failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 3
           envFrom:
           - configMapRef:
               name: {{ .Values.expressionsResolvedConfigmapName }}
