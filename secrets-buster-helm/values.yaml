@@ -24,7 +24,16 @@ resources:
     memory: "512Mi"
 nodeSelector: {}
 affinity: {}
-cm:
-  enable: true
+
 expressionsResolvedConfigmapName: "expressions-resolved-values-cm"
 expressionsSecretName: "expressions-secret"
+
+secretExpressions:
+  - "<+secrets.getValue(\"account.GitopsVaultSecretInline\")>"
+  - "<+secrets.getValue(\"account.GitopsVaultSecretRef\")>"
+  - "<+secrets.getValue(\"account.GitopsHSMSecret\")>"
+# ConfigMap values - the expected resolved values
+configMapValues:
+  - "GITOPS_VAULT_INLINE_SECRET_VALUE"
+  - "GITOPS_VAULT_REF_SECRET_VALUE"
+  - "GITOPS_HSM_SECRET_VALUE"
