@@ -78,8 +78,7 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: http
-      protocol: TCP
+      targetPort: 8080
       name: http
   selector:
     app: {{ template "secrets-buster.name" . }}
