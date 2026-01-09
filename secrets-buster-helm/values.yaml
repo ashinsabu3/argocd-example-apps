@@ -1,0 +1,30 @@
+image:
+  tag: "v0.0.1"
+  repository: "ashinsabu/secret-expression-resolution"
+  pullPolicy: "Always"
+ingress:
+  path: "/"
+  hosts:
+  - "abx"
+  annotations: {}
+  tls: []
+  enabled: true
+replicaCount: 1
+tolerations: []
+service:
+  port: 80
+  type: "ClusterIP"
+containerPort: 80
+resources:
+  limits:
+    cpu: "0.3"
+    memory: "128Mi"
+  requests:
+    cpu: "0.2"
+    memory: "128Mi"
+nodeSelector: {}
+affinity: {}
+cm:
+  enable: true
+expressionsResolvedConfigmapName: "expressions-resolved-values-cm"
+expressionsSecretName: "expressions-secret"
