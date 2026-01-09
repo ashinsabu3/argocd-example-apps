@@ -12,9 +12,9 @@ ingress:
 replicaCount: 1
 tolerations: []
 service:
-  port: 80
+  port: 8080
   type: "ClusterIP"
-containerPort: 80
+containerPort: 8080
 resources:
   limits:
     cpu: "0.5"
