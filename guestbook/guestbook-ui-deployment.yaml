@@ -12,8 +12,6 @@ spec:
     metadata:
       labels:
         app: guestbook-ui
-        name: {{ .Values.x }}
-        name2: {{ .Values.ashinsabu }}
     spec:
       topologySpreadConstraints:
         - maxSkew: 1
