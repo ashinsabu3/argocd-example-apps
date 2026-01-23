@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Configmap
+metadata:
+  name: redis-cm
+data:
+  secretfordb: <+variable.account>
+  avariable: <+variable.account.a>
