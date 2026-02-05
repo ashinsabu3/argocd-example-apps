@@ -26,6 +26,6 @@ nodeSelector: {}
 affinity: {}
 cm:
   enable: true
-xyz: <+variable.account>
+xyz: <+variable.account.VAR1>
 expressionsecret: <+secrets.getValue("account.tesgitops2")>
 hsmsecret: <+secrets.getValue("account.test-secret-acc")>
