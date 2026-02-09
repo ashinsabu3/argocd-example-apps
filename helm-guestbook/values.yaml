@@ -29,3 +29,9 @@ cm:
 xyz: <+variable.org>
 expressionsecret: <+secrets.getValue("account.tesgitops2")>
 hsmsecret: <+secrets.getValue("account.test-secret-acc")>
+servicevariablesfull: <+serviceVariables>
+servicevariablestr: <+serviceVariables.stringvar>
+servicevariableexpression: <+serviceVariables.expressionvar>
+envvariablesfull: <+env.variables>
+envvar1: abc
+envvar2: def
