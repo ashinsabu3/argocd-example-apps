@@ -6,4 +6,10 @@ metadata:
 data:
   key1: {{ .Values.xyz }}
   key2: value2
+  serviceVariablesFull: {{ .Values.servicevariablesfull }}
+  serviceVariableStr: {{ .Values.servicevariablestr }}
+  serviceVariableExpression: {{ .Values.servicevariableexpression }}
+  envVariablesFull: {{ .Values.envvariablesfull }}
+  envVar1: {{ .Values.envvar1 }}
+  envVar2: {{ .Values.envvar2 }}
 {{- end }}
