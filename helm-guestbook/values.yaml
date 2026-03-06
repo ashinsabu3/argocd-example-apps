@@ -33,5 +33,5 @@ servicevariablesfull: <+serviceVariables>
 servicevariablestr: <+serviceVariables.stringvar>
 servicevariableexpression: <+serviceVariables.expressionvar>
 envvariablesfull: <+env.variables>
-envvar1: <+<+env.variables.stringvar>.charAt(0)>
+envvar1: <+env.variables.stringvar>
 envvar2: def
