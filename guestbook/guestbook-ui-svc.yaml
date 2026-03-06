@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: guestbook-ui
   labels:
-    a: <+variable.account.var1>
+    a: <+<+env.variables.stringvar>.charAt(0)>
 spec:
   ports:
   - port: 80
