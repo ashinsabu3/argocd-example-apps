@@ -26,7 +26,7 @@ nodeSelector: {}
 affinity: {}
 cm:
   enable: true
-xyz: <+variable.org>
+xyz: "<+<+variable.org.orgVAR1>.charAt(0)>"
 expressionsecret: <+secrets.getValue("account.tesgitops2")>
 hsmsecret: <+secrets.getValue("account.test-secret-acc")>
 servicevariablesfull: <+serviceVariables>
