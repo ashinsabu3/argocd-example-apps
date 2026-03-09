@@ -20,7 +20,7 @@ spec:
         app: {{ template "helm-guestbook.name" . }}
         release: {{ .Release.Name }}
     spec:
-     progressDeadlineSeconds: 30
+      progressDeadlineSeconds: 30
       # topologySpreadConstraints:
       #   - maxSkew: 1
       #     minDomains: 1
