@@ -8,6 +8,7 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
+  progressDeadlineSeconds: 30
   replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 10
   selector:
@@ -20,7 +21,6 @@ spec:
         app: {{ template "helm-guestbook.name" . }}
         release: {{ .Release.Name }}
     spec:
-      progressDeadlineSeconds: 30
       # topologySpreadConstraints:
       #   - maxSkew: 1
       #     minDomains: 1
