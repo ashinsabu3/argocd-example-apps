@@ -13,7 +13,7 @@ spec:
       labels:
         app: guestbook-ui
     spec:
-      progressDeadlineSeconds: 30s
+      progressDeadlineSeconds: 30
       topologySpreadConstraints:
         - maxSkew: 1
           minDomains: 1
