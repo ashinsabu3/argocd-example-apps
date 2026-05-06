@@ -1,5 +1,5 @@
 image:
-  tag: "latest"
+  tag: "good"
   repository: "ashinsabu/loggerimagerandom"
   pullPolicy: "Always"
 linesPerMinute: 10000
