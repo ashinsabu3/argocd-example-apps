@@ -52,6 +52,8 @@ spec:
           env: 
           - name: "USERNAME"
             value: test-{{ .Values.path }}
+          - name: "LINES_PER_MINUTE"
+            value: {{ .Values.linesPerMinutes }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
