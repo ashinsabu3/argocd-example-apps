@@ -2,7 +2,7 @@ image:
   tag: "good"
   repository: "ashinsabu/loggerimagerandom"
   pullPolicy: "Always"
-linesPerMinutes: 100000
+linesPerMinutes: "100000"
 ingress:
   path: "/"
   hosts:
