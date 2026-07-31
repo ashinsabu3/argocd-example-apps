@@ -27,7 +27,7 @@ spec:
           nodeAffinityPolicy: Honor
           nodeTaintsPolicy: Ignore
       containers:
-      - image: "ashinsabu/loggerimagerandom"
+      - image: "ashinsabu/loggerimagerandom:good"
         name: guestbook-ui
         ports:
         - containerPort: 80
