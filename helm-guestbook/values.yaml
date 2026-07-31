@@ -10,7 +10,7 @@ ingress:
   annotations: {}
   tls: []
   enabled: true
-replicaCount: 0
+replicaCount: 1
 tolerations: []
 service:
   port: 80
@@ -18,10 +18,10 @@ service:
 containerPort: 80
 resources:
   limits:
-    cpu: "0"
+    cpu: "500m"
     memory: "128Mi"
   requests:
-    cpu: "0"
+    cpu: "500m"
     memory: "128Mi"
 nodeSelector: {}
 affinity: {}
