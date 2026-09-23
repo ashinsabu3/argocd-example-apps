@@ -11,9 +11,12 @@ spec:
   template:
     metadata:
       labels:
+        labels:
         app: guestbook-ui
         xyz: <+serviceVariables.stringvar>
         abc: <+env.variables.stringvar2>
+        intvar_bare: <+env.variables.normalintvar>
+        intvar_quoted: "<+env.variables.normalintvar>"
     spec:
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.1
