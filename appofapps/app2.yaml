@@ -677,20 +677,3 @@ spec:
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
----
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-    name: guestbook-999
-    namespace: argocd
-spec:
-    project: aprojectlol
-    source:
-        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
-        targetRevision: HEAD
-        path: helm-guestbook
-        helm:
-            values: |-
-                replicaCount: 0
-                image:
-                  tag: 2
