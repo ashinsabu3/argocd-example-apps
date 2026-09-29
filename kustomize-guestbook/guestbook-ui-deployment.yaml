@@ -12,8 +12,8 @@ spec:
     metadata:
       labels:
         app: guestbook-ui
-        # svcStringVar: <+serviceVariables.stringvar>
-        # envStringVar: <+env.variables.stringvar2>
+        svcStringVar: <+serviceVariables.stringvar>
+        envStringVar: <+env.variables.stringvar2>
     spec:
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
