@@ -9,8 +9,8 @@ spec:
     matchLabels:
       app: guestbook-ui
   template:
-    metadata:
-      labels:
+    # metadata:
+    #   labels:
         # app: guestbook-ui
         # svcStringVar: <+serviceVariables.stringvar>
         # envStringVar: <+env.variables.stringvar2>
