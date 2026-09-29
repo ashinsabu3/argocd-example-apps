@@ -13,8 +13,8 @@ spec:
       labels:
         labels:
         # app: guestbook-ui
-        # xyz: <+serviceVariables.stringvar>
-        # abc: <+env.variables.stringvar2>
+        # svcStringVar: <+serviceVariables.stringvar>
+        # envStringVar: <+env.variables.stringvar2>
         # intvar_bare: <+env.variables.normalintvar>
         # intvar_quoted: "<+env.variables.normalintvar>"
     spec:
