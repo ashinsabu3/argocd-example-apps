@@ -15,8 +15,6 @@ spec:
         # app: guestbook-ui
         # svcStringVar: <+serviceVariables.stringvar>
         # envStringVar: <+env.variables.stringvar2>
-        # intvar_bare: <+env.variables.normalintvar>
-        # intvar_quoted: "<+env.variables.normalintvar>"
     spec:
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.1
