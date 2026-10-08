@@ -13,7 +13,7 @@ spec:
             values: |-
                 replicaCount: 0
                 image:
-                  tag: 2
+                  tag: 3
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
@@ -36,7 +36,7 @@ spec:
             values: |-
                 replicaCount: 0
                 image:
-                  tag: 2
+                  tag: 3
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
@@ -59,7 +59,7 @@ spec:
             values: |-
                 replicaCount: 0
                 image:
-                  tag: 2
+                  tag: 3
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
@@ -82,7 +82,7 @@ spec:
             values: |-
                 replicaCount: 0
                 image:
-                  tag: 2
+                  tag: 3
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
@@ -105,7 +105,7 @@ spec:
             values: |-
                 replicaCount: 0
                 image:
-                  tag: 2
+                  tag: 3
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
@@ -128,7 +128,7 @@ spec:
             values: |-
                 replicaCount: 0
                 image:
-                  tag: 2
+                  tag: 3
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
@@ -151,7 +151,7 @@ spec:
             values: |-
                 replicaCount: 0
                 image:
-                  tag: 2
+                  tag: 3
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
@@ -174,7 +174,7 @@ spec:
             values: |-
                 replicaCount: 0
                 image:
-                  tag: 2
+                  tag: 3
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
@@ -197,7 +197,7 @@ spec:
             values: |-
                 replicaCount: 0
                 image:
-                  tag: 2
+                  tag: 3
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
