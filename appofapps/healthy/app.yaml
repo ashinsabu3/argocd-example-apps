@@ -1,0 +1,218 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: guestbook-965
+    namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "7"
+spec:
+    project: aprojectlol
+    source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        targetRevision: HEAD
+        path: helm-guestbook
+        helm:
+            values: |-
+                replicaCount: 0
+                image:
+                  tag: "good"
+    destination:
+        server: https://kubernetes.default.svc
+        namespace: ashin-test
+    syncPolicy:
+        automated:
+          enabled: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: guestbook-966
+    namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "1"
+spec:
+    project: aprojectlol
+    source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        targetRevision: HEAD
+        path: helm-guestbook
+        helm:
+            values: |-
+                replicaCount: 0
+                image:
+                  tag: "good"
+    destination:
+        server: https://kubernetes.default.svc
+        namespace: ashin-test
+    syncPolicy:
+        automated:
+          enabled: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: guestbook-967
+    namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "2"
+spec:
+    project: aprojectlol
+    source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        targetRevision: HEAD
+        path: helm-guestbook
+        helm:
+            values: |-
+                replicaCount: 0
+                image:
+                  tag: "good"
+    destination:
+        server: https://kubernetes.default.svc
+        namespace: ashin-test
+    syncPolicy:
+        automated:
+          enabled: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: guestbook-968
+    namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "2"
+spec:
+    project: aprojectlol
+    source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        targetRevision: HEAD
+        path: helm-guestbook
+        helm:
+            values: |-
+                replicaCount: 0
+                image:
+                  tag: "good"
+    destination:
+        server: https://kubernetes.default.svc
+        namespace: ashin-test
+    syncPolicy:
+        automated:
+          enabled: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: guestbook-969
+    namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "3"
+spec:
+    project: aprojectlol
+    source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        targetRevision: HEAD
+        path: helm-guestbook
+        helm:
+            values: |-
+                replicaCount: 0
+                image:
+                  tag: "good"
+    destination:
+        server: https://kubernetes.default.svc
+        namespace: ashin-test
+    syncPolicy:
+        automated:
+          enabled: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: guestbook-970
+    namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "5"
+spec:
+    project: aprojectlol
+    source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        targetRevision: HEAD
+        path: helm-guestbook
+        helm:
+            values: |-
+                replicaCount: 0
+                image:
+                  tag: 1
+    destination:
+        server: https://kubernetes.default.svc
+        namespace: ashin-test
+    syncPolicy:
+        automated:
+          enabled: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: guestbook-971
+    namespace: argocd
+spec:
+    project: aprojectlol
+    source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        targetRevision: HEAD
+        path: helm-guestbook
+        helm:
+            values: |-
+                replicaCount: 0
+                image:
+                  tag: 3
+    destination:
+        server: https://kubernetes.default.svc
+        namespace: ashin-test
+    syncPolicy:
+        automated:
+          enabled: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: guestbook-972
+    namespace: argocd
+spec:
+    project: aprojectlol
+    source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        targetRevision: HEAD
+        path: helm-guestbook
+        helm:
+            values: |-
+                replicaCount: 0
+                image:
+                  tag: 3
+    destination:
+        server: https://kubernetes.default.svc
+        namespace: ashin-test
+    syncPolicy:
+        automated:
+          enabled: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: guestbook-973
+    namespace: argocd
+spec:
+    project: aprojectlol
+    source:
+        repoURL: https://github.com/ashinsabu3/argocd-example-apps.git
+        targetRevision: HEAD
+        path: helm-guestbook
+        helm:
+            values: |-
+                replicaCount: 0
+                image:
+                  tag: 3
+    destination:
+        server: https://kubernetes.default.svc
+        namespace: ashin-test
+    syncPolicy:
+        automated:
+          enabled: true
