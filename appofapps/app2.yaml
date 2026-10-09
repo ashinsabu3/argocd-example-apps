@@ -3,6 +3,8 @@ kind: Application
 metadata:
     name: guestbook-965
     namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "1"
 spec:
     project: aprojectlol
     source:
@@ -26,6 +28,8 @@ kind: Application
 metadata:
     name: guestbook-966
     namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "1"
 spec:
     project: aprojectlol
     source:
@@ -49,6 +53,8 @@ kind: Application
 metadata:
     name: guestbook-967
     namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "2"
 spec:
     project: aprojectlol
     source:
@@ -72,6 +78,8 @@ kind: Application
 metadata:
     name: guestbook-968
     namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "2"
 spec:
     project: aprojectlol
     source:
@@ -95,6 +103,8 @@ kind: Application
 metadata:
     name: guestbook-969
     namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "3"
 spec:
     project: aprojectlol
     source:
@@ -118,6 +128,8 @@ kind: Application
 metadata:
     name: guestbook-970
     namespace: argocd
+    annotations:
+        argocd.argoproj.io/sync-wave: "5"
 spec:
     project: aprojectlol
     source:
