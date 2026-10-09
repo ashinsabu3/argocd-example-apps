@@ -15,7 +15,7 @@ spec:
             values: |-
                 replicaCount: 0
                 image:
-                  tag: "bad"
+                  tag: "good"
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
