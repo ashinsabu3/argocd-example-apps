@@ -13,9 +13,9 @@ spec:
         path: helm-guestbook
         helm:
             values: |-
-                replicaCount: 0
+                replicaCount: 1
                 image:
-                  tag: "good"
+                  tag: "bad"
     destination:
         server: https://kubernetes.default.svc
         namespace: ashin-test
