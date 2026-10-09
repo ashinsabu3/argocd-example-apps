@@ -4,7 +4,7 @@ metadata:
     name: guestbook-965
     namespace: argocd
     annotations:
-        argocd.argoproj.io/sync-wave: "1"
+        argocd.argoproj.io/sync-wave: "7"
 spec:
     project: aprojectlol
     source:
@@ -13,7 +13,7 @@ spec:
         path: helm-guestbook
         helm:
             values: |-
-                replicaCount: 0
+                replicaCount: 1
                 image:
                   tag: "bad"
     destination:
