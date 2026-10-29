@@ -1,5 +1,5 @@
 image:
-  tag: "good"
+  tag: "promo-53"
   repository: "ashinsabu/loggerimagerandom"
   pullPolicy: "Always"
 linesPerMinutes: "100000"
