@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: xt
+data:
+  replicas: {{ .Values.replicas | quote }}
+  port: {{ .Values.port | quote }}

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: xf
+data:
+  upper: {{ .Values.envName | upper | quote }}
+  b64: {{ .Values.envName | b64enc | quote }}
+  isprod: {{ if eq .Values.envName "prod" }}"yes"{{ else }}"no"{{ end }}
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: xs
+stringData:
+  env: {{ .Values.envName | quote }}
+  up: {{ .Values.envName | upper | quote }}
