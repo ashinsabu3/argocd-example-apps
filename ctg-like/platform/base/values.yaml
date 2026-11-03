@@ -1,0 +1,2 @@
+# no serviceAccount key on purpose (CDS-134869: it lives in ../values-common.yaml)
+replicas: 1
