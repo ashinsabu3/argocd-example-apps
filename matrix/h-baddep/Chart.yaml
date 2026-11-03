@@ -1,0 +1,7 @@
+apiVersion: v2
+name: h-baddep
+version: 0.1.0
+dependencies:
+  - name: nope
+    version: 1.0.0
+    repository: https://127.0.0.1:9/charts

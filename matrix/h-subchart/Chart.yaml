@@ -1,0 +1,7 @@
+apiVersion: v2
+name: h-subchart
+version: 0.1.0
+dependencies:
+  - name: sub
+    version: 0.1.0
+    repository: file://./charts-src/sub

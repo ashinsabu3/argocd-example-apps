@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rel
+data:
+  name: {{ .Release.Name | quote }}
+  ns: {{ .Release.Namespace | quote }}
+  svc: {{ .Release.Service | quote }}

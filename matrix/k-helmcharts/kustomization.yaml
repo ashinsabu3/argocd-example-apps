@@ -1,0 +1,5 @@
+helmGlobals:
+  chartHome: charts-local
+helmCharts:
+  - name: mini
+    releaseName: mini
