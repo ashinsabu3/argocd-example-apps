@@ -1,5 +1,5 @@
 image:
-  tag: "good"
+  tag: "swap-gh-7"
   repository: "ashinsabu/loggerimagerandom"
   pullPolicy: "Always"
 linesPerMinutes: "100000"
